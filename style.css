@@ -1,0 +1,63 @@
+body {
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 60px;  
+    font-weight: bold;
+    color: #00c6e9;   
+    text-shadow: 2px 2px 5px #c5c7d3;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00c6e9; }
+    to { text-shadow: 0 0 25px #00f7ff, 0 0 35px #00c6e9; }
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #ddd;
+}
+
+.logo {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 198, 233, 0.6);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
